@@ -14,7 +14,7 @@ namespace APICalculoIMC.Models
             Peso = peso;
             Altura = altura;
             IMC = Peso / (Altura * Altura); // Simulação de falha
-            //IMC = Math.Round(Peso / (Altura * Altura), 2);
+            //IMC = Math.Round(Peso / (Altura * Altura), 1);
             Situacao = IMC switch
             {
                 < 18.5 => "Magreza",
